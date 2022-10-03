@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/phones"
     android:orientation="vertical">
+
 
     <EditText
         android:id="@+id/etName"
-        android:hint="Имя"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </EditText>
+        android:layout_height="wrap_content"
+        android:hint="Имя"></EditText>
 
     <EditText
         android:id="@+id/etEmail"
-        android:hint="Email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </EditText><![CDATA[
+        android:layout_height="wrap_content"
+        android:hint="Email"></EditText><![CDATA[
 
 
         android:layout_width="match_parent"
@@ -29,14 +28,14 @@
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="GetTextFromSQL"
         android:text="Добавить"></Button>
 
     <Button
-            android:id="@+id/btnRead"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Читать">
-        </Button>
+        android:id="@+id/btnRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Читать"></Button>
 
     <Button
         android:id="@+id/btnClear"
@@ -44,4 +43,12 @@
         android:layout_height="wrap_content"
         android:text="Очистить"></Button>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/phones"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background">
+
+    </ImageView>
 </LinearLayout>
